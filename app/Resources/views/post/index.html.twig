@@ -1,0 +1,7 @@
+{% for post in tab|reverse %}
+    <div class="commentaire">
+        <p>Commentaire de : <b>{{ post['username'] }}</b></p>
+        <p>{{ post['content'] }}</p>
+        <p>Publié le {{ post['date']|date("m/d/Y à H:i") }} </p>
+    </div>
+{% endfor %}

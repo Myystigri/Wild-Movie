@@ -17,6 +17,17 @@
 		<div class="col-md-12">
 			<h2>Commentaires : </h2>
 			<hr>
+			{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+			{{ render(controller('FrontendBundle:Post:new')) }}
+			{% else %}
+
+			<p>Vous devez être connecté pour laisser un commentaire !</p>
+			
+			{% endif %}
+
+			{{ render(controller('FrontendBundle:Post:index')) }}
+
 
 			{# CODE HERE #}
 		</div>

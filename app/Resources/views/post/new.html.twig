@@ -1,0 +1,6 @@
+<h2>Écrire un commentaire</h2>
+
+{{ form_start(form, {'method': 'post', 'action': path('post_new')}) }}
+    {{ form_widget(form) }}
+        <input type="submit" value="Envoyer" />
+    {{ form_end(form) }}

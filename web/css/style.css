@@ -59,3 +59,35 @@
 	background-color:#04B45F;
 	padding:20px;
 }
+
+/*INTEGRATION CSS TMTC*/
+
+.all {
+	height:100vh;
+}
+.petite-img {
+	margin-top: 20px;
+	width:100%;
+	border:2px solid black;
+}
+
+.petite-img img {
+	width:100%!important;
+}
+
+.petite-img h2 {
+	margin-top: 0px;
+}
+
+.grande-img {
+	height:400px;
+	width:100%;
+}
+
+
+/* commentaires */
+
+.commentaire {
+	background-color:rgba(0,0,255,0.3);
+	margin-bottom:30px;
+}
